@@ -1,0 +1,22 @@
+{
+  "name": "modexcel",
+  "version": "1.0.0",
+  "description": "Generate a modified XLS/CSV file",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "Venkatesh Naidu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "pg": "^7.11.0",
+    "request": "^2.88.0",
+    "xls-to-json": "^0.5.2"
+  }
+}

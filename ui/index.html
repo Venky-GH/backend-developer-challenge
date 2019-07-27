@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Modexcel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/iziToast.min.css">
+  <link rel="stylesheet" href="/css/loader.css">
+  <link rel="stylesheet" href="/css/common.css">
+</head>
+<body class="container">
+<div class="load-container" id="loader">
+  <div class="blocks b-one"></div>
+  <div class="blocks b-two"></div>
+  <div class="blocks b-three"></div>
+  <div class="blocks b-four"></div>
+  <div class="blocks b-five"></div>
+</div>
+<div class="hidden" id="rest_body">
+  <div class="form">
+    <div class="header">Mod-excel Generator</div>
+    <form id="myForm" method="POST">
+      <div class="form-group">
+        <label for="cid">Select Currency</label>
+        <select class="form-control" name="currency" id="cid" required>
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="ISK">ISK</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="USD">USD</option>
+          <option value="MYR">MYR</option>
+          <option value="MXN">MXN</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PHP">PHP</option>
+          <option value="PLN">PLN</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="myFile">Select XLS/CSV File</label>
+        <input class="form-control" id="myFile" type="file" name="file" required>
+      </div>
+      <div class="form-group btn-div">
+        <input class="btn" type="submit" id="form_submit" value="generate">
+      </div>
+    </form>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/iziToast.min.js" type="text/javascript"></script>
+<script src="/js/xlsx.core.min.js"></script>
+<script src="/js/FileSaver.js"></script>
+<script src="/js/jhxlsx.js"></script>
+<script src="/js/common.js"></script>
+</body>
+</html>
