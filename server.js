@@ -8,10 +8,10 @@ let multer = require('multer');
 let request = require('request');
 
 let config = {
-  user: 'venky_aws',
-  database: 'modexcel_db',
-  host: 'cinebase.cq5jqnq6kxwf.us-east-1.rds.amazonaws.com',
-  password: 'venky123456'
+  user: 'username',
+  database: 'database_name',
+  host: 'host_name',
+  password: 'password'
 };
 
 let app = express();
